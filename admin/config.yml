@@ -1,0 +1,35 @@
+# Τοπικό backend για δοκιμή (γράφει αρχεία στον δίσκο, χωρίς git auth)
+local_backend:
+  url: http://localhost:8081/api/v1
+backend:
+  name: git-gateway
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+locale: "el"
+
+collections:
+  - name: "settings"
+    label: "Ρυθμίσεις Σελίδας"
+    files:
+      - name: "hero"
+        label: "Κεντρική Ενότητα (Hero)"
+        file: "content/settings.yml"
+        fields:
+          - { name: kicker, label: "Μικρός τίτλος", widget: string }
+          - { name: title, label: "Κύριος τίτλος", widget: text }
+          - { name: subtitle, label: "Υπότιτλος", widget: text }
+          - { name: phone, label: "Τηλέφωνο", widget: string }
+          - { name: email, label: "Email", widget: string }
+
+  - name: "icons"
+    label: "Εικόνες (Αγιογραφίες)"
+    folder: "content/icons"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: title, label: "Όνομα εικόνας", widget: string }
+      - { name: image, label: "Φωτογραφία", widget: image }
+      - { name: price, label: "Τιμή (€)", widget: number, required: false }
+      - { name: available, label: "Διαθέσιμη", widget: boolean, default: true }
+      - { name: body, label: "Περιγραφή", widget: markdown }

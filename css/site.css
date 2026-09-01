@@ -1,0 +1,8 @@
+/* ===== THEME COLORS & FONTS (edit these!) ===== */
+:root{--accent-color:#E3B667;--accent2-color:#C2833D;--accent3-color:#F4C883;--accent4-color:#B8D1DC;--primary-color:#2E4057;--dark-text-color:#1D2935;--gray-text-color:#A0A0A0;--button-padding-x:12px;--button-padding-y:8px;--font-family-body:"Source Sans Pro",sans-serif;--light-text-color:#FAF9F5;--dark-border-color:#666666;--light-border-color:#E3E3E3;--font-family-heading:"Merriweather Sans",sans-serif;--button-rounded-radius:5px;--dark-background-color:#1B2838;--light-background-color:#EAECEE;--medium-background-color:#CCD1D9;--primary-button-text-color:#FFFFFF;--secondary-button-bg-color:#7C98B3;--secondary-button-text-color:#FFFFFF;--primary-button-hover-bg-color:#1E2D3A;--primary-button-hover-text-color:#FFFFFF;--secondary-button-hover-bg-color:#67889F;--secondary-button-hover-text-color:#FFFFFF}
+
+/* ===== Background image variables ===== */
+:root{--sf-img-205: url("images/img-001-eb1ac9eeef.avif");--sf-img-206: url("images/img-002-6adaff2302.avif");--sf-img-210: url("images/img-003-e3bd42dc1f.avif")}
+
+/* ===== Custom animations ===== */
+@keyframes float{0%,100%{transform:translateY(0px) translateX(0px);opacity:0.4}25%{transform:translateY(-20px) translateX(10px);opacity:0.6}50%{transform:translateY(-40px) translateX(-10px);opacity:0.3}75%{transform:translateY(-20px) translateX(10px);opacity:0.6}}.animate-float{animation:float 8s ease-in-out infinite}
